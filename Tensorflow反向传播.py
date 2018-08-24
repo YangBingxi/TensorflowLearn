@@ -47,8 +47,8 @@ with tf.Session() as sess:
     init_op = tf.global_variables_initializer()
     sess.run(init_op)
     # 输出目前（未经训练）的参数取值。
-    print "w1:\n", (sess.run(w1))
-    print "w2:\n", (sess.run(w2))
+    print ("w1:\n", (sess.run(w1)))
+    print ("w2:\n", (sess.run(w2)))
     
     # 训练模型。
     STEPS = 3000
